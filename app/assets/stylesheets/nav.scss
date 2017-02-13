@@ -1,0 +1,94 @@
+@import "variables";
+
+#top-nav{
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+  height: $top-nav-height;
+  @media (max-width: $screen-sm-min) {
+    height: 160px;
+  }
+  img{
+    max-width: 105px;
+    padding-left: $standard-padding;
+    padding-top: 6px;
+    @media (max-width: $screen-sm-min) {
+      display: block;
+      margin: 0 auto;
+      max-width: $standard-padding*3;
+      padding-left: 0;
+    }
+  }
+  ul{
+    float: right;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    @media (max-width: $screen-sm-min) {
+      display: block;
+      margin: 0 auto;
+      float: none;
+      width: 340px;
+    }
+    li{
+      display: inline-block;
+      font-size: $standard-font-size;
+      padding: $standard-padding/1.2 $standard-padding;
+      letter-spacing: $standard-letter-spacing;
+      text-transform: uppercase;
+      @media (max-width: $screen-sm-min) {
+        font-size: $mobile-input-font-size;
+        padding: $standard-padding/1.2 $standard-padding/3;
+      }
+    }
+  }
+}
+
+footer{
+  background: $black;
+  color: $white;
+  font-size: $standard-font-size;
+  padding: $standard-padding*2 $standard-padding;
+  ul{
+    padding-left: 0;
+    &.social{
+      float: left;
+      a{
+        padding-right: $standard-padding;
+        display: inline-block;
+        background-color: $blue;
+        padding: $standard-padding/2 28px;
+        border-radius: 100%;
+        max-width: $standard-padding;
+        margin-bottom: $standard-padding/2;
+        margin-right: $standard-padding/2;
+        background-size: $standard-padding;
+        background-position: center;
+        background-repeat: no-repeat;
+        &.instagram{
+          background-image: url(asset_path('social/instagram.svg'));
+        }
+        &.facebook{
+          background-image: url(asset_path('social/facebook.svg'));
+        }
+        &.googleplus{
+          background-image: url(asset_path('social/googleplus.svg'));
+        }
+        &.twitter{
+          background-image: url(asset_path('social/twitter.svg'));
+        }
+        &.youtube{
+          background-image: url(asset_path('social/youtube.svg'));
+        }
+      }
+      li{
+        display: inline-block;
+      }
+    }
+    &.links{
+      list-style: none;
+      float: right;
+      @media (max-width: $screen-sm-min) {
+        float: left;
+      }
+    }
+  }
+}
