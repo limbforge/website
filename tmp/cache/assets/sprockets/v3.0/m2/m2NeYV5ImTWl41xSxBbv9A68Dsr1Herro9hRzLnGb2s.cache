@@ -1,0 +1,7 @@
+I"v(function() {
+  $(document).ready(function() {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+
+}).call(this);
+:ET

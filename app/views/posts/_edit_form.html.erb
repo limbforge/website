@@ -1,0 +1,85 @@
+<div id="edit-form">
+  <%= form_for @post, html: { multipart: true } do |f| %>
+    <% if @post.errors.any? %>
+      <div class="errors">
+        <p><%= pluralize(@post.errors.count, "error")%> prevented this post from saving</p>
+        <ul>
+          <% @post.errors.full_messages.each do |msg| %>
+          <li><%= msg%></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end%>
+    <div id="post-hero" style="background-image: url('<%= @post.image%>');">
+      <div class="hero-text">
+        <p><%= f.text_field :description %></p>
+        <%= link_to "Delete", post_path(@post), method: :delete, data: {confirm: "Are you sure?"} %>
+      </div>
+    </div>
+    <div class="container">
+      <p class="created-at">
+        <%= f.label :title %>
+        <%= f.text_field :title %>
+      </p>
+      <p class="created-at">
+        Created at
+        <%= f.text_field :created_at, :class => 'datepicker'%>
+      </p>
+      <p>
+        <%= f.label :body %>
+        <%= f.text_area :body %>
+      </p>
+      <p>
+        <%= f.label :image %>
+        <%= f.file_field :image, id: 'pictureInput' %>
+      </p>
+      <p>
+        <%= f.label :logo %>
+        <%= f.file_field :logo %>
+      </p>
+      <p>Categories</p>
+
+      <% Category.all.each do |category| %>
+      <div class="category-checkbox">
+        <input type="checkbox" name="post[category_ids][]" <%= "checked" if @post.categories.include?(category)%> value="<%=category.id%>">
+        <label>
+          <%= category.name %>
+        </label>
+      </div>
+
+      <% end %>
+      <p>
+        <%= f.submit %>
+      </p>
+    </div>
+  <% end %>
+</div>
+
+<!-- Initialize the editor. -->
+<script>
+  $(function() {
+    $('#post_body').froalaEditor({
+      key: 'kA1atA6kfg==',
+      imageUploadMethod: 'POST',
+      imageUploadToS3: {
+        bucket: '<%= @hash[:bucket] %>',
+        region: 's3', // Change the region if it is different
+        keyStart: '<%= @hash[:key_start] %>',
+        callback: function (url, key) {
+          console.log (url);
+          console.log (key);
+        },
+        params: {
+          acl: '<%= @hash[:acl] %>',
+          AWSAccessKeyId: '<%= @hash[:access_key] %>',
+          policy: '<%= @hash[:policy] %>',
+          signature: '<%= @hash[:signature] %>',
+        }
+      }
+    });
+  });
+  $(document).ready(function(){
+    $('.datepicker').datepicker();
+  });
+
+</script>

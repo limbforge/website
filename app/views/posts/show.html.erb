@@ -1,0 +1,87 @@
+<div id="post-hero" style="background-image: url('<%= image_path(@post.image)%>');">
+  <div class="hero-text">
+    <p><%= @post.description %></p>
+    <% if user_signed_in? %>
+      <%= link_to "Edit", edit_post_path(@post) %>
+    <% end %>
+  </div>
+</div>
+
+<div class="white-bg">
+  <div class="container area-padding">
+    <div class="row">
+      <div class="col-xs-12">
+        <p><%= simple_format(@post.body.html_safe,{}, sanitize: false) %></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-footer area-padding no-padding-top white-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <p><strong>Posted at:</strong> <%= @post.created_at.to_date.to_formatted_s(:long_ordinal)  %></p>
+      </div>
+      <div class="col-sm-4">
+        <p><strong>STUFF:</strong>
+          <% if @categories_list != nil %>
+            <% @categories_list.each do |category|%>
+              <a href="<%= category_path(category) %>"> <%= category.name %></a>
+            <% end %>
+          <% end %>
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <div class="social-share">
+          <i class="fa fa-facebook fb_share"></i>
+          <a href="https://twitter.com/intent/tweet/?text=Checkout%20<%=@post.title%>,%20a%20post%20by%20@kaitlynhova%20!%20www.leftbrain.kaitlynhova.com/posts/<%=@post.slug%>"><i class="fa fa-twitter twitter_share"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="posts-list">
+  <div class="row no-margin">
+    <% @related_posts.first(4).each_with_index do |post, index|%>
+      <a href="/posts/<%= post.slug%>">
+        <div class="col-sm-6 col-md-4 <%= " hidden-md hidden-lg" if index == 3 %>">
+          <div class="post" style="background-image: url('<%= image_path(post.image)%>');">
+            <div class="post-content">
+              <p><%= post.title %></p>
+              <p class="date"><%= post.created_at.to_date.to_formatted_s(:long_ordinal)  %></p>
+            </div>
+          </div>
+        </div>
+      </a>
+    <% end %>
+  </div>
+</div>
+<script>
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+   (function(d, debug){var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];if   (d.getElementById(id)) {return;}js = d.createElement('script'); js.id = id; js.async = true;js.src = "//connect.facebook.net/en_US/all" + (debug ? "/debug" : "") + ".js";ref.parentNode.insertBefore(js, ref);}(document, /*debug*/ false));
+
+    function postToFeed(title, desc, url, image) {
+        var obj = {method: 'feed',link: url, picture: image,name: title,description: desc};
+        function callback(response) {}
+        FB.ui(obj, callback);
+    }
+    var fbShareBtn = document.querySelector('.fb_share');
+    fbShareBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        var title = "<%= @post.title %>",
+            desc = "Enable Community Foundation",
+            url = "www.kaitlynhova.com",
+            image = "<%= asset_url(@post.image.url)%>";
+        postToFeed(title, desc, url, image);
+
+        return false;
+    });
+</script>

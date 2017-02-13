@@ -1,0 +1,22 @@
+<div class="container fluid">
+  <p class="category-search-title">
+    <%= @category.name %>
+  </p>
+</div>
+
+<div id="posts-list">
+  <div class="row no-margin">
+    <% @posts.each_with_index do |post, index|%>
+      <a href="/posts/<%= post.slug%>">
+        <div class="col-sm-6 col-md-4 ">
+          <div class="post" style="background-image: url('<%= image_path(post.image)%>');">
+            <div class="post-content">
+              <p><%= post.title %></p>
+              <p class="date"><%= post.created_at.to_date.to_formatted_s(:long_ordinal)  %></p>
+            </div>
+          </div>
+        </div>
+      </a>
+    <% end %>
+  </div>
+</div>

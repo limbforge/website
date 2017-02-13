@@ -1,0 +1,73 @@
+<%= form_for @post, html: { multipart: true } do |f|%>
+  <% if @post.errors.any?%>
+    <div class="errors">
+      <p><%= pluralize(@post.errors.count, "error")%> prevented this post from saving</p>
+      <ul>
+        <% @post.errors.full_messages.each do |msg| %>
+        <li><%= msg%></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end%>
+  <p>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    Created at
+    <%= f.text_field :created_at, :class => 'datepicker'%>
+  </p>
+  <p>
+    <%= f.label :body %>
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.label :image %>
+    <%= f.file_field :image, id: 'pictureInput' %>
+  </p>
+  <p>Categories</p>
+
+  <% Category.all.each do |category| %>
+  <div class="category-checkbox">
+    <input type="checkbox" name="post[category_ids][]" <%= "checked" if @post.categories.include?(category)%> value="<%=category.id%>">
+    <label>
+      <%= category.name %>
+    </label>
+  </div>
+
+  <% end %>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<!-- Initialize the editor. -->
+<script>
+$( document ).ready(function() {
+    $('#post_body').froalaEditor({
+      key: 'kA1atA6kfg==',
+      imageUploadMethod: 'POST',
+      imageUploadToS3: {
+        bucket: '<%= @hash[:bucket] %>',
+        region: 's3', // Change the region if it is different
+        keyStart: '<%= @hash[:key_start] %>',
+        callback: function (url, key) {
+          console.log (url);
+          console.log (key);
+        },
+        params: {
+          acl: '<%= @hash[:acl] %>',
+          AWSAccessKeyId: '<%= @hash[:access_key] %>',
+          policy: '<%= @hash[:policy] %>',
+          signature: '<%= @hash[:signature] %>',
+        }
+      }
+    });
+    $('.datepicker').datepicker();
+  });
+</script>

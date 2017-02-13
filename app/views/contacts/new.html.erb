@@ -1,0 +1,34 @@
+<div id="sayhey">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Say hey!</h1>
+        <p>Do you have a project or want to get coffee? Are interested in having a new "laptop party" buddy or have a job proposal? Want to high five over the internet? I am currently based out of the Bay area (San Francisco / Berkeley), and would love to chat.</p>
+      </div>
+      <div class="hay-form col-xs-12">
+        <%= form_for @contact do |f| %>
+          <div class="col-sm-6">
+            <%= f.label :name%>
+            <%= f.text_field :name, required: true, placeholder: 'Ludwig von Mozart' %>
+          </div>
+          <div class="col-sm-6">
+            <%= f.label :email%>
+            <%= f.email_field :email, required: true, placeholder: 'Ludwig@mozart.com'%>
+          </div>
+          <div class="col-md-12">
+            <%= f.label :message%>
+            <%= f.text_area :message, as: :text, placeholder: 'What\'s up?' %>
+          </div>
+          <div class="hidden">
+            <%= f.label :nickname%>
+            <%= f.email_field :nickname, hint: "leave this blank, dude" %>
+          </div>
+          <div class="col-md-12">
+            <%= f.submit 'yay!'%>
+          </div>
+
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

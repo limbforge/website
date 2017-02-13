@@ -1,0 +1,28 @@
+<% if user_signed_in?%>
+  <div id="admin-bar">
+    <div class="container">
+      <ul>
+        <li>
+          <%= link_to :user_list do %>
+          <i class="fa fa-users" data-toggle="tooltip" title="Users" data-placement="bottom"></i>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to posts_path do %>
+          <i class="fa fa-list"  data-toggle="tooltip" title="List" data-placement="bottom"></i>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to new_post_path do %>
+          <i class="fa fa-plus" data-toggle="tooltip" title="New Post" data-placement="bottom"></i>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to destroy_user_session_path do %>
+          <i class="fa fa-power-off" data-toggle="tooltip" title="Log out" data-placement="bottom"></i>
+          <% end %>
+        </li>
+      </ul>
+    </div>
+  </div>
+<% end%>
