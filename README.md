@@ -19,10 +19,6 @@ rake db:migrate
 ```
 rails s
 ```
-### Admin Login
-```
-localhost:3000/meow
-```
 
 ### Set up environments locally
 You need a .env file for all of your variables. Here's what you need
