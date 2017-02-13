@@ -1,8 +1,5 @@
-# Cat Management System
-### behold: all in one Rails CMS. I did the majority of the work for you, and now you can do whatever you want with it!
-
-I can't believe there wasn't anything else.
-
+# ECF
+### Main website
 
 ### Prerequisites
 This app is built on ruby V2.2.3, rails V4.2.5, and requires a postgresql database.
