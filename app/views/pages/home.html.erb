@@ -4,7 +4,7 @@
     <p>Custom 3D printble prosthetics</p>
   </div>
 </div>
-<div class="area gray">
+<div id="mission" class="area gray">
   <div class="container">
     <p class="subheader">OUR MISSION</p>
     <h2 class="header">We want to help people</h2>
@@ -17,7 +17,7 @@
     </p>
   </div>
 </div>
-<div class="area">
+<div id="limbforge" class="area">
   <div class="container">
   <div class="row">
       <div class="col-md-6">
@@ -39,14 +39,14 @@
   </div>
 </div>
 
-<div id="mailinglist" class="area gray">
+<div id="contact" class="area gray">
   <div class="container">
     <div class="row">
       <p class="subheader">GET INVOLVED</p>
       <h2 class="header">Join our Mailing List</h2>
       <!-- Begin MailChimp Signup Form -->
       <div id="mc_embed_signup">
-        <form action="//kaitlynhova.us11.list-manage.com/subscribe/post?u=f6c89e3652944c4095fdc687f&amp;id=8839b7db22" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+        <form action="//enablecommunityfoundation.us13.list-manage.com/subscribe/post?u=a38bf719c51f108ba3c4a8be8&amp;id=45c26c704c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
           <div class="row">
             <div class="col-sm-3 col-xs-12">
               <p>FIRST NAME</p>
@@ -88,6 +88,40 @@
               <img class="<%= sponsor[:class] %>" src="<%= asset_path(sponsor[:logo]) %>">
             </div>
           </a>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="sayhey">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Say hey!</h1>
+        <p>Do you have a project or want to get coffee? Are interested in having a new "laptop party" buddy or have a job proposal? Want to high five over the internet? I am currently based out of the Bay area (San Francisco / Berkeley), and would love to chat.</p>
+      </div>
+      <div class="hay-form col-xs-12">
+        <%= form_for @contact do |f| %>
+          <div class="col-sm-6">
+            <%= f.label :name%>
+            <%= f.text_field :name, required: true, placeholder: 'Ludwig von Mozart' %>
+          </div>
+          <div class="col-sm-6">
+            <%= f.label :email%>
+            <%= f.email_field :email, required: true, placeholder: 'Ludwig@mozart.com'%>
+          </div>
+          <div class="col-md-12">
+            <%= f.label :message%>
+            <%= f.text_area :message, as: :text, placeholder: 'What\'s up?' %>
+          </div>
+          <div class="hidden">
+            <%= f.label :nickname%>
+            <%= f.email_field :nickname, hint: "leave this blank, dude" %>
+          </div>
+          <div class="col-md-12">
+            <%= f.submit 'yay!'%>
+          </div>
         <% end %>
       </div>
     </div>

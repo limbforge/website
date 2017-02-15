@@ -1,10 +1,24 @@
 @import "variables";
 
 #top-nav{
+  background-color: $white;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
   height: $top-nav-height;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
   @media (max-width: $screen-sm-min) {
     height: 160px;
+  }
+  a{
+    color: $black;
+    &:hover{
+      text-decoration: none;
+    }
+    &:focus{
+      text-decoration: none;
+    }
   }
   img{
     max-width: 105px;
