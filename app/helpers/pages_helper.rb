@@ -14,15 +14,15 @@ module PagesHelper
         class: "dlapiper"
       },
       { link: "http://studiofathom.com/",
-        logo: "sponsors/fathom.png",
+        logo: "sponsors/fathom.svg",
         class: "fathom"
       },
       { link: "http://www.eastman.com/Pages/Home.aspx",
-        logo: "sponsors/eastman.jpg",
+        logo: "sponsors/eastman.svg",
         class: "eastman"
       },
       { link: "http://www.standardcyborg.com/",
-        logo: "sponsors/standardcyborg.png",
+        logo: "sponsors/standardcyborg.svg",
         class: "standardcyborg"
       },
       { link: "http://colorfabb.com/",

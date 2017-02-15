@@ -17,8 +17,24 @@ body{
   }
 }
 
+textarea{
+  color: $black;
+  padding: $standard-padding;
+  width: 100%;
+  &:focus{
+    outline: none;
+  }
+}
+
 input{
+  color: $black;
+  display: block;
+  width: 100%;
+  margin-bottom: $standard-padding;
   padding: $standard-padding/2;
+  &:focus{
+    outline: none;
+  }
   &[type="submit"]{
     background: $blue;
     border: none;
@@ -28,4 +44,9 @@ input{
     margin-top: 37px;
     font-size: 20px;
   }
+}
+
+label{
+  font-weight: 500;
+  text-transform: uppercase;
 }

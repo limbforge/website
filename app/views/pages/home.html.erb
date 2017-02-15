@@ -39,7 +39,7 @@
   </div>
 </div>
 
-<div id="contact" class="area gray">
+<div class="area gray">
   <div class="container">
     <div class="row">
       <p class="subheader">GET INVOLVED</p>
@@ -94,17 +94,18 @@
   </div>
 </div>
 
-<div id="sayhey">
+<div id="contact" class="area">
+  <div class="overlay"></div>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h1>Say hey!</h1>
-        <p>Do you have a project or want to get coffee? Are interested in having a new "laptop party" buddy or have a job proposal? Want to high five over the internet? I am currently based out of the Bay area (San Francisco / Berkeley), and would love to chat.</p>
+        <p class="subheader">OUR TOOL</p>
+        <h2 class="header">Meet Limbforge</h2>
       </div>
-      <div class="hay-form col-xs-12">
+      <div class="hay-form">
         <%= form_for @contact do |f| %>
           <div class="col-sm-6">
-            <%= f.label :name%>
+            <%= f.label :NAME%>
             <%= f.text_field :name, required: true, placeholder: 'Ludwig von Mozart' %>
           </div>
           <div class="col-sm-6">
