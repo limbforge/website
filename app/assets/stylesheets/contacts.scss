@@ -1,3 +1,23 @@
 // Place all the styles related to the contacts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "variables";
+
+#email-confirmation{
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  h1{
+    font-size: 9vw;
+  }
+  p{
+    font-size: $standard-padding/1.2;
+    padding-bottom: $standard-padding/1.5;
+  }
+  .confirmation-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
