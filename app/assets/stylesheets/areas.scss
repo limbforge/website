@@ -7,7 +7,7 @@
   height: 600px;
   position: relative;
   &.home{
-    background-image: url(asset_path('arm.png'));
+    background-image: url(asset_path('arm.jpg'));
   }
   &.shade{
     &::after{
