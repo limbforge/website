@@ -8,6 +8,15 @@
   position: relative;
   &.home{
     background-image: url(asset_path('arm.jpg'));
+    .logo{
+      width: 37%;
+      @media (max-width: $screen-md-min) {
+        width: 50%;
+      }
+      @media (max-width: $screen-sm-min) {
+        width: 60%;
+      }
+    }
   }
   &.shade{
     &::after{
@@ -53,6 +62,9 @@
     width: 100%;
     text-align: center;
     z-index: 3;
+    @media (max-width: $screen-sm-min) {
+      top: 68%;
+    }
     h1{
       font-size: $standard-padding * 5;
       margin: 0;
