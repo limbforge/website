@@ -85,3 +85,14 @@
     margin: 0;
   }
 }
+
+#terms{
+  text-align: left;
+  strong{
+    font-size: $standard-padding*1.5;
+    line-height: $standard-padding*1.5;
+    display: block;
+    padding-top: $standard-padding*3;
+    padding-bottom: $standard-padding;
+  }
+}

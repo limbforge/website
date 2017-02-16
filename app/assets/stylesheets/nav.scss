@@ -100,8 +100,10 @@ footer{
     &.links{
       list-style: none;
       float: right;
+      text-align: right;
       @media (max-width: $screen-sm-min) {
         float: left;
+        text-align: left;
       }
     }
   }

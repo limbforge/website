@@ -14,6 +14,10 @@ Rails.application.routes.draw do
 
   get '/sayhey-thanks', to: 'contacts#create'
 
+  get 'privacy', to: 'pages#privacy', as: :privacy
+
+  get 'terms', to: 'pages#terms', as: :terms
+
   devise_scope :user do
     # using login path for registration
     get '/meow', to: 'devise/sessions#new'

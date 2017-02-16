@@ -1,13 +1,15 @@
 <div id="top-nav">
-  <img src="<%=asset_path('logo.svg') %>">
+  <a href="<%= root_path%>">
+    <img src="<%=asset_path('logo.svg') %>">
+  </a>
   <ul>
-    <a href="#mission">
+    <a href="<%= root_path + '#mission' %>">
       <li>Mission</li>
     </a>
-    <a href="#limbforge">
-      <li>Limbforge</li>
+    <a href="<%= root_path + '#limbforge'%>">
+      <li>LimbForge</li>
     </a>
-    <a href="#contact">
+    <a href="<%= root_path + '#contact' %>">
       <li>Contact</li>
     </a>
   </ul>
