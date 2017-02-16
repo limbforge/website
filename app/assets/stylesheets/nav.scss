@@ -61,6 +61,12 @@ footer{
   color: $white;
   font-size: $standard-font-size;
   padding: $standard-padding*2 $standard-padding;
+  .logo{
+    max-width: $standard-padding*3;
+    display: block;
+    margin: 0 auto;
+    padding-top: $standard-padding;
+  }
   ul{
     padding-left: 0;
     &.social{
