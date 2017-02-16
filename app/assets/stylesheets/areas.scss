@@ -47,7 +47,7 @@
   .hero-text{
     color: $white;
     position: absolute;
-    top: 50%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -75,6 +75,7 @@
     width: 100%;
   }
   .header{
+    color: $blue;
     font-size: $standard-padding*2;
     margin: 0;
     margin-bottom: $standard-padding/2;
