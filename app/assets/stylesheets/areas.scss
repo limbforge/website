@@ -86,6 +86,13 @@
   img{
     width: 100%;
   }
+  .sponsor-img{
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: $standard-padding;
+  }
   .header{
     color: $blue;
     font-size: $standard-padding*2;
