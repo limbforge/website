@@ -33,6 +33,10 @@ module PagesHelper
         logo: "sponsors/colorfabb.svg",
         class: "colorfabb"
       },
+      { link: "http://www.createoandp.com/",
+        logo: "sponsors/create.svg",
+        class: "create"
+      },
     ]
   end
 end

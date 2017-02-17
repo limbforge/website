@@ -34,6 +34,19 @@
   margin-top: $standard-padding*2;
   .sponsor{
     display: block;
+    &.last{
+      clear: both;
+    }
+    .last{
+      display: block;
+      margin: 0 auto;
+      float: none;
+    }
+    .create{
+      max-width: 150px;
+      display: block;
+      margin: 0 auto;
+    }
     .google{
       max-width: 150px;
       display: block;

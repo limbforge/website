@@ -19,7 +19,7 @@
   <div class="container">
   <div class="row">
       <div class="col-md-8">
-        <h2 class="header">Introducing LimbForge™</h2>
+        <h2 class="header">Introducing LimbForge &trade;</h2>
         <p class="subheader">DEPLOYABLE PROSTHETIC TECHNOLOGY</p>
         <p>
           LimbForge is a powerful new tool for clinicians for configuring and manufacturing 3D printed prosthetics.
@@ -85,8 +85,8 @@
         <p class="subheader">MANY THANKS TO</p>
         <div class="sponsors">
           <% sponsors.each do |sponsor|%>
-            <a class="sponsor" href="<%= sponsor[:link]%>" target="_blank">
-              <div class="col-sm-3 col-xs-6">
+            <a class="sponsor <%= sponsor == sponsors.last ? 'last' : ''%>" href="<%= sponsor[:link]%>" target="_blank">
+              <div class="col-sm-3 col-xs-6 <%= sponsor == sponsors.last ? 'last' : ''%>">
                 <div class="sponsor-img <%= sponsor[:class] %>" style="background-image: url(<%= asset_path(sponsor[:logo]) %>)"></div>
               </div>
             </a>
