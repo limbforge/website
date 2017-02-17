@@ -17,6 +17,10 @@ module PagesHelper
         logo: "sponsors/fathom.svg",
         class: "fathom"
       },
+      { link: "http://www.3dlifeprints.com/",
+        logo: "sponsors/3dlp.svg",
+        class: "3dlp"
+      },
       { link: "http://www.eastman.com/Pages/Home.aspx",
         logo: "sponsors/eastman.svg",
         class: "eastman"
