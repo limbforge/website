@@ -83,6 +83,11 @@
   &.gray{
     background-color: $white-gray;
   }
+  &#sponsors{
+    .header{
+      margin-bottom: $standard-padding/1.5;
+    }
+  }
   img{
     width: 100%;
   }
@@ -97,11 +102,11 @@
     color: $blue;
     font-size: $standard-padding*2;
     margin: 0;
-    margin-bottom: $standard-padding/2;
   }
   .subheader{
     font-size: $standard-padding;
     margin: 0;
+    margin-bottom: $standard-padding/2;
   }
 }
 

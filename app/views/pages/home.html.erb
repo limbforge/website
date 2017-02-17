@@ -5,8 +5,8 @@
 </div>
 <div id="mission" class="area gray">
   <div class="container">
-    <p class="subheader">OUR MISSION</p>
     <h2 class="header">What We Do</h2>
+    <p class="subheader">OUR MISSION</p>
     <p>
       Crowdsourcing the design and manufacture of 3D printed prosthetics has failed to deliver
       impactful results.  ECF develops culturally appropriate, high performance prostheses,
@@ -19,9 +19,9 @@
 <div id="limbforge" class="area">
   <div class="container">
   <div class="row">
-      <div class="col-md-6">
-        <p class="subheader">DEPLOYABLE PROSTHETIC TECHNOLOGY</p>
+      <div class="col-md-8">
         <h2 class="header">Introducing LimbForge™</h2>
+        <p class="subheader">DEPLOYABLE PROSTHETIC TECHNOLOGY</p>
         <p>
           LimbForge is a powerful new tool for clinicians for configuring and manufacturing 3D printed prosthetics.
           It enables clinicians to spend less time building devices, dramatically simplifies supply chains, and
@@ -30,7 +30,7 @@
           a prosthetic can be customized to any human anatomy on Earth.
         </p>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-4">
         <br/>
         <img src="<%=asset_path('ipad.jpg') %>">
       </div>
@@ -41,8 +41,8 @@
 <div class="area gray">
   <div class="container">
     <div class="row">
-      <p class="subheader">STAY IN TOUCH</p>
       <h2 class="header">Join our Mailing List</h2>
+      <p class="subheader">STAY IN TOUCH</p>
       <!-- Begin MailChimp Signup Form -->
       <div id="mc_embed_signup">
         <form action="//enablecommunityfoundation.us13.list-manage.com/subscribe/post?u=a38bf719c51f108ba3c4a8be8&amp;id=45c26c704c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
@@ -76,10 +76,11 @@
   </div>
 </div>
 
-<div class="area">
+<div id="sponsors" class="area">
   <div class="container">
     <div class="row">
-      <p class="subheader">PARTNERS</p>
+      <p class="header">Our Supporters</p>
+      <p class="subheader">MANY THANKS TO</p>
       <div class="sponsors">
         <% sponsors.each do |sponsor|%>
           <a class="sponsor" href="<%= sponsor[:link]%>" target="_blank">
@@ -98,8 +99,8 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <p class="subheader">GET INVOLVED</p>
         <h2 class="header">CONTACT US</h2>
+        <p class="subheader">GET INVOLVED</p>
       </div>
       <div class="hay-form">
         <%= form_for @contact do |f| %>
