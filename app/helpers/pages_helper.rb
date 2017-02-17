@@ -26,8 +26,8 @@ module PagesHelper
         class: "standardcyborg"
       },
       { link: "http://colorfabb.com/",
-        logo: "sponsors/colorfab.png",
-        class: "colorfab"
+        logo: "sponsors/colorfabb.svg",
+        class: "colorfabb"
       },
     ]
   end
