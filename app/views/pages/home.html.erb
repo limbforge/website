@@ -40,37 +40,39 @@
 <div class="area gray">
   <div class="container">
     <div class="row">
-      <h2 class="header">Join our Mailing List</h2>
-      <p class="subheader">STAY IN TOUCH</p>
-      <!-- Begin MailChimp Signup Form -->
-      <div id="mc_embed_signup">
-        <form action="//enablecommunityfoundation.us13.list-manage.com/subscribe/post?u=a38bf719c51f108ba3c4a8be8&amp;id=45c26c704c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
-          <div class="row">
-            <div class="col-sm-3 col-xs-12">
-              <p>FIRST NAME</p>
-              <input type="text" value="" class="" placeholder="Hansel" name="FNAME" id="mce-FNAME">
-            </div>
-            <div class="col-sm-3 col-xs-12">
-              <p>LAST NAME</p>
-              <input class="" type="text" placeholder="Hova" value="" name="LNAME" id="mce-LNAME">
-            </div>
-            <div class="col-sm-3 col-xs-12">
-              <p>EMAIL</p>
-              <input class="full-input" type="email" value="" placeholder="Hova@email.com" name="EMAIL" id="mce-EMAIL">
-            </div>
+      <div class="col-xs-12">
+        <h2 class="header">Join our Mailing List</h2>
+        <p class="subheader">STAY IN TOUCH</p>
+        <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup">
+          <form action="//enablecommunityfoundation.us13.list-manage.com/subscribe/post?u=a38bf719c51f108ba3c4a8be8&amp;id=45c26c704c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+            <div class="row">
+              <div class="col-sm-3 col-xs-12">
+                <p>FIRST NAME</p>
+                <input type="text" value="" class="" placeholder="Hansel" name="FNAME" id="mce-FNAME">
+              </div>
+              <div class="col-sm-3 col-xs-12">
+                <p>LAST NAME</p>
+                <input class="" type="text" placeholder="Hova" value="" name="LNAME" id="mce-LNAME">
+              </div>
+              <div class="col-sm-3 col-xs-12">
+                <p>EMAIL</p>
+                <input class="full-input" type="email" value="" placeholder="Hova@email.com" name="EMAIL" id="mce-EMAIL">
+              </div>
 
-            <div id="mce-responses" class="clear">
-              <div class="response" id="mce-error-response" style="display:none"></div>
-              <div class="response" id="mce-success-response" style="display:none"></div>
-            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;"><input type="text" name="b_f6c89e3652944c4095fdc687f_8839b7db22" tabindex="-1" value=""></div>
-            <div class="col-sm-3 col-xs-12">
-              <div class="clear submit-button"><input class="full-input" type="submit" value="Huzzah!" name="subscribe" id="mc-embedded-subscribe"></div>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;"><input type="text" name="b_f6c89e3652944c4095fdc687f_8839b7db22" tabindex="-1" value=""></div>
+              <div class="col-sm-3 col-xs-12">
+                <div class="clear submit-button"><input class="full-input" type="submit" value="Huzzah!" name="subscribe" id="mc-embedded-subscribe"></div>
+              </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
+        <!--End mc_embed_signup-->
       </div>
-      <!--End mc_embed_signup-->
     </div>
   </div>
 </div>
@@ -78,16 +80,18 @@
 <div id="sponsors" class="area">
   <div class="container">
     <div class="row">
-      <p class="header">Our Supporters</p>
-      <p class="subheader">MANY THANKS TO</p>
-      <div class="sponsors">
-        <% sponsors.each do |sponsor|%>
-          <a class="sponsor" href="<%= sponsor[:link]%>" target="_blank">
-            <div class="col-sm-3 col-xs-6">
-              <div class="sponsor-img <%= sponsor[:class] %>" style="background-image: url(<%= asset_path(sponsor[:logo]) %>)"></div>
-            </div>
-          </a>
-        <% end %>
+      <div class="col-xs-12">
+        <p class="header">Our Supporters</p>
+        <p class="subheader">MANY THANKS TO</p>
+        <div class="sponsors">
+          <% sponsors.each do |sponsor|%>
+            <a class="sponsor" href="<%= sponsor[:link]%>" target="_blank">
+              <div class="col-sm-3 col-xs-6">
+                <div class="sponsor-img <%= sponsor[:class] %>" style="background-image: url(<%= asset_path(sponsor[:logo]) %>)"></div>
+              </div>
+            </a>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>
