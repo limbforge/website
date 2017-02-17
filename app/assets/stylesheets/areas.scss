@@ -4,18 +4,17 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 600px;
   position: relative;
   &.home{
     background-image: url(asset_path('arm.jpg'));
+    strong{
+      color: $blue;
+    }
     .logo{
-      width: 25%;
-      @media (max-width: $screen-md-min) {
-        width: 50%;
-      }
-      @media (max-width: $screen-sm-min) {
-        width: 60%;
-      }
+      display: block;
+      margin: 0 auto;
+      margin-top: $standard-padding;
+      width: 80px;
     }
   }
   &.shade{
@@ -55,15 +54,15 @@
   }
   .hero-text{
     color: $white;
-    position: absolute;
-    top: 57%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 100%;
-    text-align: center;
+    padding: $standard-padding;
+    text-align: left;
     z-index: 3;
+    padding-top: $standard-padding*5;
+    padding-bottom: $standard-padding*2;
+    position: relative;
     @media (max-width: $screen-sm-min) {
-      top: 68%;
+      padding-top: $standard-padding*7;
     }
     h1{
       font-size: $standard-padding * 5;
@@ -73,6 +72,7 @@
       font-size: $standard-padding;
       margin: 0;
       letter-spacing: $standard-letter-spacing;
+      line-height: 45px;
     }
   }
 }
