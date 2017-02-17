@@ -34,30 +34,10 @@
   margin-top: $standard-padding*2;
   .sponsor{
     display: block;
-    img{
-      width: 100%;
+    .google{
+      max-width: 150px;
       display: block;
       margin: 0 auto;
-      margin-bottom: $standard-padding;
-      &.colorfab{
-        max-width: 150px;
-      }
-      &.dlapiper{
-        max-width: 125px;
-      }
-      &.eastman{
-        max-width: 150px;
-      }
-      &.fathom{
-        max-width: 140px;
-      }
-      &.google{
-        max-width: 200px;
-      }
-      &.standardcyborg{
-        max-width: 90px;
-      }
     }
   }
-
 }
