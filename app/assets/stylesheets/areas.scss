@@ -9,7 +9,7 @@
   &.home{
     background-image: url(asset_path('arm.jpg'));
     .logo{
-      width: 37%;
+      width: 25%;
       @media (max-width: $screen-md-min) {
         width: 50%;
       }

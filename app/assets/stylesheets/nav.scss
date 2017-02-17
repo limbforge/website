@@ -21,9 +21,9 @@
     }
   }
   img{
-    max-width: 105px;
+    max-width: $standard-padding*3;
     padding-left: $standard-padding;
-    padding-top: 6px;
+    padding-top: 11px;
     @media (max-width: $screen-sm-min) {
       display: block;
       margin: 0 auto;
@@ -45,9 +45,8 @@
     li{
       display: inline-block;
       font-size: $standard-font-size;
-      padding: $standard-padding/1.2 $standard-padding;
+      padding: $standard-padding/1.2 3.5px;
       letter-spacing: $standard-letter-spacing;
-      text-transform: uppercase;
       @media (max-width: $screen-sm-min) {
         font-size: $mobile-input-font-size;
         padding: $standard-padding/1.2 $standard-padding/3;
