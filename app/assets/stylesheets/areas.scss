@@ -102,6 +102,12 @@
     color: $blue;
     font-size: $standard-padding*2;
     margin: 0;
+    .tm{
+      font-size: 23px;
+      position: relative;
+      top: $standard-padding/-1.2;
+      text-transform: uppercase;
+    }
   }
   .subheader{
     font-size: $standard-padding;
