@@ -74,8 +74,8 @@
 }
 
 .area{
-  padding: $standard-padding*2 $standard-padding;
   font-size: $standard-font-size;
+  padding: $standard-padding*2 0;
   &.gray{
     background-color: $white-gray;
   }

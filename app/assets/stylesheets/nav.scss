@@ -60,7 +60,7 @@ footer{
   background: $black;
   color: $white;
   font-size: $standard-font-size;
-  padding: $standard-padding*2 $standard-padding;
+  padding: $standard-padding*2 0;
   .logo{
     max-width: $standard-padding*3;
     display: block;
@@ -107,9 +107,12 @@ footer{
       list-style: none;
       float: right;
       text-align: right;
+      position: relative;
+      top: 85px;
       @media (max-width: $screen-sm-min) {
         float: left;
         text-align: left;
+        top: 0;
       }
     }
   }
