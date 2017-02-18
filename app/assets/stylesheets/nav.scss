@@ -114,6 +114,12 @@ footer{
         text-align: left;
         top: 0;
       }
+      li{
+        display: inline-block;
+        &:first-of-type{
+          padding-right: $standard-padding/2;
+        }
+      }
     }
   }
 }
