@@ -6,7 +6,7 @@ module PagesHelper
         class: "google"
       },
       { link: "http://www.autodesk.org/",
-        logo: "sponsors/afoundation.png",
+        logo: "sponsors/afoundation.svg",
         class: "autodesk"
       },
       { link: "https://www.dlapiper.com",
