@@ -9,9 +9,12 @@
     background-image: url(asset_path('arm.jpg'));
     .logo{
       display: block;
-      margin: 0 auto;
-      margin-top: $standard-padding;
-      width: 80px;
+      width: 87%;
+      @media (max-width: $screen-md-min) {
+        max-width: $standard-padding*10;
+        margin: 0 auto;
+        margin-bottom: $standard-padding*-2;
+      }
     }
   }
   &.shade{
@@ -65,10 +68,13 @@
       margin: 0;
     }
     p{
-      font-size: $standard-padding;
+      font-size: $mobile-input-font-size;
       margin: 0;
       letter-spacing: $standard-letter-spacing;
-      line-height: 45px;
+      line-height: $standard-padding;
+      &:first-of-type{
+        padding-top: 75px;
+      }
     }
   }
 }
@@ -83,6 +89,8 @@
     .header{
       line-height: $standard-padding*2;
       margin-bottom: 8px;
+      position: relative;
+      left: -3px;
     }
     .subheader{
       margin-bottom: $standard-padding;
@@ -102,6 +110,8 @@
     color: $blue;
     font-size: $standard-padding*2;
     margin: 0;
+    position: relative;
+    left: $standard-padding/-6;
     .tm{
       font-size: 23px;
       position: relative;
