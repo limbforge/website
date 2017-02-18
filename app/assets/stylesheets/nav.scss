@@ -61,11 +61,22 @@ footer{
   color: $white;
   font-size: $standard-font-size;
   padding: $standard-padding*2 0;
+  .legal-infos{
+    font-size: $mobile-input-font-size;
+    opacity: 0.5;
+    text-align:center;
+    &:first-of-type{
+      padding-top: $standard-padding*1.5;
+    }
+    &:last-of-type{
+      padding-top: 0;
+    }
+  }
   .logo{
     max-width: $standard-padding*3;
     display: block;
     margin: 0 auto;
-    padding-top: $standard-padding;
+    padding-top: $standard-padding/6;
   }
   ul{
     padding-left: 0;
@@ -108,7 +119,7 @@ footer{
       float: right;
       text-align: right;
       position: relative;
-      top: 85px;
+      top: $standard-padding/2;
       @media (max-width: $screen-sm-min) {
         float: left;
         text-align: left;
