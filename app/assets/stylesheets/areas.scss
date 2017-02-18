@@ -55,7 +55,6 @@
   .hero-text{
     color: $white;
     width: 100%;
-    padding: $standard-padding;
     text-align: left;
     z-index: 3;
     padding-top: $standard-padding*5;
@@ -86,7 +85,10 @@
   &#sponsors{
     .header{
       line-height: $standard-padding*2;
-      margin-bottom: $standard-padding/1.5;
+      margin-bottom: 8px;
+    }
+    .subheader{
+      margin-bottom: $standard-padding;
     }
   }
   img{
@@ -107,7 +109,7 @@
   .subheader{
     font-size: $standard-padding;
     margin: 0;
-    margin-bottom: $standard-padding/2;
+    margin-bottom: $standard-padding;
   }
 }
 
