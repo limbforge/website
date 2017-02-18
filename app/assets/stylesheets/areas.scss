@@ -7,9 +7,6 @@
   position: relative;
   &.home{
     background-image: url(asset_path('arm.jpg'));
-    strong{
-      color: $blue;
-    }
     .logo{
       display: block;
       margin: 0 auto;
