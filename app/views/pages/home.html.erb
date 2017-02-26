@@ -97,9 +97,8 @@
         <p class="subheader">Advancing The Mission</p>
         <div class="sponsors">
           <% sponsors.each do |sponsor|%>
-            <% lastRow = (sponsor == sponsors[sponsors.length - 2]) || (sponsor == sponsors[sponsors.length - 1]) %>
-            <a class="sponsor <%= lastRow ? 'last' : '' %>" href="<%= sponsor[:link]%>" target="_blank">
-              <div class="<%= lastRow ? 'col-sm-6' : 'col-sm-3' %> col-xs-6">
+            <a class="sponsor" href="<%= sponsor[:link]%>" target="_blank">
+              <div class="col-sm-3 col-xs-6">
                 <div class="sponsor-img <%= sponsor[:class] %>" style="background-image: url(<%= asset_path(sponsor[:logo]) %>)"></div>
               </div>
             </a>
