@@ -37,6 +37,10 @@ module PagesHelper
         logo: "sponsors/create.svg",
         class: "create"
       },
+      { link: "http://www.jmkfund.org/",
+        logo: "sponsors/jmkfund.svg",
+        class: "jm"
+      },
     ]
   end
 end
