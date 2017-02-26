@@ -9,7 +9,7 @@
     background-image: url(asset_path('arm.jpg'));
     .logo{
       display: block;
-      width: 87%;
+      padding-top: 34px;
       @media (max-width: $screen-md-min) {
         max-width: $standard-padding*10;
         margin: 0 auto;
