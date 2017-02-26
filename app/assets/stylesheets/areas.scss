@@ -7,6 +7,9 @@
   position: relative;
   &.home{
     background-image: url(asset_path('arm.jpg'));
+    button{
+      padding: $standard-padding/2 $standard-padding;
+    }
     .logo{
       display: block;
       padding-top: 34px;
