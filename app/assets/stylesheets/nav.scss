@@ -73,8 +73,9 @@ footer{
     &.centered{
       text-align: center;
       position: relative;
-      top: -55px;
-      right: -57px;
+      width: 100px;
+      margin-top: -54px;
+      margin-left: 100px;
     }
     .right-text{
       float: right;
@@ -84,12 +85,16 @@ footer{
       }
     }
   }
-  .logo{
-    max-width: 185px;
+  .footer-logo{
+    max-width: 194px;
     display: block;
     margin: 0 auto;
-    padding-top: $standard-padding;
-    padding-right: $standard-padding*3;
+    .logo{
+      max-width: 185px;
+      display: block;
+      padding-top: $standard-padding;
+      padding-right: $standard-padding*3;
+    }
   }
   ul{
     padding-left: 0;
