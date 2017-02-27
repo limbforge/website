@@ -101,7 +101,7 @@
         <div class="sponsors">
           <% sponsors.each do |sponsor|%>
             <a class="sponsor" href="<%= sponsor[:link]%>" target="_blank">
-              <div class="col-sm-3 col-xs-6">
+              <div class="col-sm-5ths col-xs-6">
                 <div class="sponsor-img <%= sponsor[:class] %>" style="background-image: url(<%= asset_path(sponsor[:logo]) %>)"></div>
               </div>
             </a>

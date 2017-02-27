@@ -64,19 +64,32 @@ footer{
   .legal-infos{
     font-size: $mobile-input-font-size;
     opacity: 0.5;
-    text-align:center;
     &:first-of-type{
       padding-top: $standard-padding*1.5;
     }
     &:last-of-type{
       padding-top: 0;
     }
+    &.centered{
+      text-align: center;
+      position: relative;
+      top: -55px;
+      right: -57px;
+    }
+    .right-text{
+      float: right;
+      padding-right: $standard-padding/2;
+      @media (max-width: $screen-sm-min) {
+        float: none;
+      }
+    }
   }
   .logo{
-    max-width: $standard-padding*3;
+    max-width: 185px;
     display: block;
     margin: 0 auto;
-    padding-top: $standard-padding/6;
+    padding-top: $standard-padding;
+    padding-right: $standard-padding*3;
   }
   ul{
     padding-left: 0;
