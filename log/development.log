@@ -7022,3 +7022,314 @@ ActionController::RoutingError (No route matches [GET] "/__webpack_hmr"):
   Rendered /Users/kaitlynhova/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
   Rendered /Users/kaitlynhova/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
   Rendered /Users/kaitlynhova/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (82.3ms)
+
+
+Started GET "/" for ::1 at 2017-03-09 12:41:38 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (20.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+DEPRECATION WARNING: [paperclip] [deprecation] AWS SDK v1 has been deprecated in paperclip 5. Please consider upgrading to AWS 2 before upgrading paperclip. (called from <class:Post> at /Users/kaitlynhova/Documents/e-nable_website/app/models/post.rb:8)
+DEPRECATION WARNING: [paperclip] [deprecation] AWS SDK v1 has been deprecated in paperclip 5. Please consider upgrading to AWS 2 before upgrading paperclip. (called from <class:Post> at /Users/kaitlynhova/Documents/e-nable_website/app/models/post.rb:10)
+  Rendered pages/home.html.erb within layouts/application (1362.8ms)
+  Rendered layouts/_topnav.html.erb (2.0ms)
+  Rendered layouts/_message.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+  Rendered layouts/_nav.html.erb (5.2ms)
+Completed 200 OK in 1765ms (Views: 1728.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-09 12:41:40 -0800
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (8.5ms)
+  Rendered layouts/_topnav.html.erb (0.6ms)
+  Rendered layouts/_message.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (0.2ms)
+Completed 200 OK in 215ms (Views: 214.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9f0f61b9cbd3faa0aa25bc2b395c423311493303c9acbb819ca1e5252d8aac7a.css?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/_variables.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/areas.self-8fac773d7750dd4f00a49b5fec5e96b9dd2869691991657622e6dd853ecb4e14.css?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/contacts.self-00e9e3e57b47c3bd616a8d7393876635235658dfe1127b0b5883ed1dbd6c356b.css?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/home.self-58e163d0474eb20d3ff955674d6b75b71d86ee6fb26c41204c03df1f7c4cd4f3.css?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/nav.self-0021b2a5740dfd12596d618cab9e6ad3927f5d6372ee987874a1acfdcc5843a7.css?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/styleguide.self-483c03e6f753dabd942a996bf0c9a88d45584d5724c7335c710bf88c15bdade9.css?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/font-awesome.self-8af77f18ca08f86e6ef3a58f04f07171319333e5ef315c91d266caecb37167d1.css?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/froala_editor.min.self-101961de5c9589f9d52e90145ffbe44d0c2426d04480c249fc919c88a8c30801.css?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/froala_style.min.self-449af54dfa94e14ff980b5631e0db70f9e93f988524f46270b419c1fa61c3d6b.css?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/char_counter.min.self-b0a5d341aa6dcf14d377638c9005b96ce89dac24faca83d69504fadc12978d83.css?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/code_view.min.self-1835a0017582ee6b142bd6014c9ed88a8c35225408bfc5d5706cd8524e1aa8da.css?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/colors.min.self-7f90228a3a8f5f4dc9b57b2919df1210e53a715fd7d86615ebb23ea78f6239d5.css?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/emoticons.min.self-031805d090f67aa57dc8f1361afd01d8d671203feb37d2f254e1c450595f9547.css?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/file.min.self-e5f8ec36929dffe92b2654fe0cd5c17e5a59aadde87e40adad98131a3e579a82.css?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/fullscreen.min.self-b119cef92e6259d6a6740b8c033760ada1bb9041ca7ef3cbabc2c4b7b07bb1ca.css?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/image_manager.min.self-1302d04879f40045276c3b32ce9c456a351c8a4f870a72fccffd3d35ed071fd8.css?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/image.min.self-4fcd8d584d7e2ddcc58e52239b7431cd841055ed8a3ff582a3cf777ffe8d2cca.css?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/line_breaker.min.self-0ca45c4d42daaeb359fc1f7eb4cbff6de48e702e0a8146e71ef9d3e2d80670de.css?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/table.min.self-62de17520ef4994fb0529215d68b5844f167f80e1e992f18b7d71ce684b1fa51.css?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/video.min.self-eca39af835f058b2d3639ccbe41aa442e5c446ef49ed15a7360399ab185e429b.css?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/froala_editor.min.self-aeddc515d80df535d7100d67a7b9babe0b77a5b768c6e276d6ad26dd71dcc5ad.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/blog.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/pages.self-18dd31648455edc92dbfb33d2063ae4dd1451caa80146e73d1c7f6f2ecb0af94.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/scroll.self-0c36cd56b5ea230ea0688b32c65350d364ceb8da5318a6359a0208e915cbbd2e.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/social.self-46aead0c3ca5322e84a22a41b005e060dfa3178974573ca2b9465056b63b7bec.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/align.min.self-97e7e5d011c88ed453d14659e99d935a5a9104c32a4cd52acee22053c8b28fe4.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/char_counter.min.self-fb619915f5c08c6198b54c7b58b3cb70c9f5f9188b5a9ed8bbb7e7122f584091.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/code_beautifier.min.self-f49e7b5171012facc2371e57a07c01fa3eb0b7178994302e547d4eba98c0c122.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/code_view.min.self-be647fd22cae2dcf3d2dc449acb804d0a878d2e16104c4a938af5ba4115f0a20.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/colors.min.self-0f65210227fadcfdd0db957b529ac21ff315aa46737633a95489416339edc89f.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/emoticons.min.self-76b387bd07beb57c87ebc749d356e61a8c8dc47c4b9ca2379783ff857972cac8.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/entities.min.self-e4762322e957ad89ead442d2f73f068c77f1cb9d1ccece59acd7a130179b73d4.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/file.min.self-1c72ffb0f0d6285f77b9eabe4930c31e52b2049fcc54ed58ad2f2df6c7a65bfc.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/font_family.min.self-1584edb380ead7c9079a78728f0d6c00a7bc4363959d8a24d30a8cf7acd32cb1.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/font_size.min.self-43ebdab28bdad3fea891a3e767d88f8fd9eb7e3959878ee0566e180c72c6f0bc.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/fullscreen.min.self-e9209e7d887bf19514761140f6ba07a16460d549a36e62c22283d359429b35d2.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/image.min.self-587305c481de44c0e00367064618d9817ef59cfe0b94cae5f387997486c764fc.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/image_manager.min.self-acef2701a057ed9599131ebc698ebfcb457642b88c737a132c04da8fd73044f7.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/inline_style.min.self-c63d49f08eeb98b18ff4f3ab15ecbc226d780760d836a50bdab19fe6cd2a9db5.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/line_breaker.min.self-3d8f2710c6dd9a5e0c842dfe3b23f2338d066cb1da480940a0554869d0374f3e.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/link.min.self-8b4ed9c331470f7352ef5dcf162bab3c42aa9f92b142d5d68aa8eda6ac8c8350.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/lists.min.self-0010d9a1c7f43caed216857e8e37e7d4c626027f2f994b0422c945053b26b9b3.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/paragraph_format.min.self-328163e2fa6a76196af94825ba851f036ac1c9fe58fd0abd013440d10a5da0f6.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/paragraph_style.min.self-85f3fc68de83d2b3d061c44beca1118dc2db1d2db4ac3a693cc15e69706fd681.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/quote.min.self-0ec180ab4edc1ce0a387d80cc5724d13841064c6f3218e7a71f124c4baed1e3f.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/save.min.self-235982913b2f4194cbe48b597bd9c78cf5da69645fa6296cad7c4911d378a3b8.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/table.min.self-c1677b6f5683821288fb1e00a4f4d58cfa589b60505f050099d469baa2ebc06e.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/url.min.self-34faa4541e20bd4568d96c3511f0dd718148e98e0e02a1ae2fe887053b75654c.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/plugins/video.min.self-7f5a72c068d18083c1e47c2f2391787d2f8b3ccf725305f6b91eff34865a521a.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/application.self-3ec32396099bc0f3c54bc36e8ecbb53295e14f29344f40321aa3652837dc30d6.js?body=1" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/logo-074db3280f835957704a0f6fb2036b12eed10e32ffea9a1b68556da8457f2d1a.svg" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/logo-white-546f48c88ead06823867cef64238e57907ff3fb75c3cdf204421dde7d0f0b080.svg" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/ipad-37e617c25e79221565a5b34e1bf68bd647cd83b47f16cfcadff78e167becbb38.jpg" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/arm-5068c501e3f5c76a939eb142afe9ca1acbed543619a56a2b324f50462ee84535.jpg" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/sponsors/afoundation-255128b6544d62505e09900ef3c9263e7c69093e02237a7bc6e6eb6487441fd2.svg" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/sponsors/fathom-ee20066ec202a8884dc42757526091afc6594c7b533198ee4a21247f9dd6e14d.svg" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/sponsors/eastman-d0c116fc1e978f73f76aa754b568d58a7e54fd7f75cffb98989098812b7a7013.svg" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/sponsors/dlapiper-4aab95fa755eaf6dc9d59447248548785aa2d014a28f718ffc7970a7f9ba7c26.svg" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/sponsors/3dlp-506a6d2f4229a28751d427362bf161774d76227600259f6cb0e6471e7bdc16a8.svg" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/sponsors/standardcyborg-fee5210a624aa1ccd7fc6f6f4cd3c258e72e65be45a6e2b2b5fb4c78065a9d00.svg" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/sponsors/create-dc20b5b0f3d9c80ab7d08e742e85ddf5b9f1413320a832faece455ad40c66eb7.svg" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/sponsors/jmkfund-38ac7316a7ab2ac9444b67a4601c78487663fe8695c3bf6e534702bbe7bc629e.svg" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/contact-b886143c63097f1722e0661a9ada2de907a3abe1afb7c59df8413c4056c2d363.jpg" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/social/facebook-16bcb74b4ea2c948cd5c09d6231dfc7f168782e96f01f82a0ab4023a4c00b1c2.svg" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/social/twitter-577fab70e3c8f1bca22cdc2ea7f7053bae8007ae1dc6496c2509edd0698a6d64.svg" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/social/instagram-f981fe3b5300a4ae5cc32ac26b31f53f2de073c5c789aa12064c1adbcb66a65f.svg" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/social/googleplus-0806fe5fd3368ba2d7877ba7d7fa514bd6b0d44c996ced56df665af1c1f6b3c5.svg" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/assets/social/youtube-a36402c33bfca175b0fb1eb22cf4b53d9b820eab2ca124dcd9afda60f8e4da2e.svg" for ::1 at 2017-03-09 12:41:41 -0800
+
+
+Started GET "/" for ::1 at 2017-03-09 12:43:14 -0800
+Processing by PagesController#home as HTML
+DEPRECATION WARNING: [paperclip] [deprecation] AWS SDK v1 has been deprecated in paperclip 5. Please consider upgrading to AWS 2 before upgrading paperclip. (called from <class:Post> at /Users/kaitlynhova/Documents/e-nable_website/app/models/post.rb:8)
+DEPRECATION WARNING: [paperclip] [deprecation] AWS SDK v1 has been deprecated in paperclip 5. Please consider upgrading to AWS 2 before upgrading paperclip. (called from <class:Post> at /Users/kaitlynhova/Documents/e-nable_website/app/models/post.rb:10)
+  Rendered pages/home.html.erb within layouts/application (168.9ms)
+  Rendered layouts/_topnav.html.erb (0.7ms)
+  Rendered layouts/_message.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 467ms (Views: 457.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sponsors/voodoo-2a7bfc7757190c610b7a950f167e7245f4b9e23bcf62c49c365ffc33f0c7ec7a.svg" for ::1 at 2017-03-09 12:43:15 -0800
