@@ -41,6 +41,10 @@ module PagesHelper
         logo: "sponsors/jmkfund.svg",
         class: "jm"
       },
+      { link: "https://voodoomfg.com/",
+        logo: "sponsors/voodoo.svg",
+        class: "voodoo"
+      },
     ]
   end
 end
