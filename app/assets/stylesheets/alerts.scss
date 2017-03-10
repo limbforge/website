@@ -10,6 +10,9 @@
   text-align: center;
   padding: $standard-padding/1.2;
   font-size: $standard-font-size;
+  @media (max-width: $screen-sm-min) {
+    top: 160px;
+  }
   a{
     color: $white;
     border-bottom: 2px solid $white;
