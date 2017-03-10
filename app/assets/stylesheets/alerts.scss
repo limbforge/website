@@ -1,0 +1,25 @@
+@import "variables";
+
+.banner-alert{
+  position: absolute;
+  top: 75px;
+  width: 100%;
+  z-index: 5;
+  background-color: $blue-rgba;
+  color: $white;
+  text-align: center;
+  padding: $standard-padding/1.2;
+  font-size: $standard-font-size;
+  a{
+    color: $white;
+    border-bottom: 2px solid $white;
+    &:hover{
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}
+
+#announcement{
+  padding-top: $standard-padding*4;
+}
