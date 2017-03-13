@@ -14,6 +14,8 @@ Rails.application.routes.draw do
 
   get '/sayhey-thanks', to: 'contacts#create'
 
+  get '/announcement', to: 'pages#announcement', as: :announcement
+
   get 'privacy', to: 'pages#privacy', as: :privacy
 
   get 'terms', to: 'pages#terms', as: :terms
