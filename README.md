@@ -1,5 +1,4 @@
-# ECF
-### Main website
+# LimbForge Webapp
 
 ### Prerequisites
 This app is built on ruby V2.2.3, rails V4.2.5, and requires a postgresql database.
